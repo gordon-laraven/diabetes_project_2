@@ -1,5 +1,7 @@
 ## diabetes_project_2
 
+## **Table of Contents**
+
 
 1. [Overview](#Overview)
 2. [Project Goals](#Project-Goals)
