@@ -6,7 +6,7 @@
 3. [Data](#data)
 4. [Data Cleaning](#Data-Cleaning)
 5. [Model](#Model)
-6. [Initial Model Performance:](#Initial-Model-Performance:)
+6. [Initial Model Performance](#Initial-Model-Performance)
 7. [Model Optimization](#Model_Optimization)
 8. [Results](#Results)
 9. [Future Development](#Future-Development)
@@ -42,7 +42,7 @@ The dataset used for this project contains synthetic data related to obesity lev
 ## **Model**
 A **Random Forest Classifier** was chosen due to its robustness and ability to handle categorical and numerical data. The model was trained using 80% of the dataset, while 20% was reserved for testing.
 
-## **Initial Model Performance:**
+## **Initial Model Performance**
 - **Accuracy**: 95.5%
 - **Precision, Recall, and F1-score** for each obesity class were all high, indicating strong performance across the board.
 
