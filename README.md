@@ -42,11 +42,11 @@ The dataset used for this project contains synthetic data related to obesity lev
 ## **Model**
 A **Random Forest Classifier** was chosen due to its robustness and ability to handle categorical and numerical data. The model was trained using 80% of the dataset, while 20% was reserved for testing.
 
-### **Initial Model Performance:**
+## **Initial Model Performance:**
 - **Accuracy**: 95.5%
 - **Precision, Recall, and F1-score** for each obesity class were all high, indicating strong performance across the board.
 
-### **Model Optimization**
+## **Model Optimization**
 A hyperparameter tuning process was conducted using GridSearchCV, which included:
 - Varying the number of trees (`n_estimators`), tree depth (`max_depth`), and other relevant parameters.
 - The best model was selected based on cross-validation scores.
