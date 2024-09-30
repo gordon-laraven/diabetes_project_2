@@ -43,7 +43,7 @@ A hyperparameter tuning process was conducted using GridSearchCV, which included
 - Investigate the impact of other features, such as dietary patterns and medical history, on the prediction of obesity levels.
 
 ## Repository Structure
-- **data/**: Contains the cleaned dataset (`cleaned_data.csv`).
+- **data/**: Contains the cleaned dataset (`ObesityDataSet_raw_and_data_sinthetic.csv`).
 - **notebooks/**: Jupyter notebooks for data exploration, cleaning, and model training.
 - **scripts/**: Python scripts for model training and evaluation.
 - **README.md**: Overview of the project.
