@@ -4,17 +4,18 @@
 
 
 1. [Overview](#Overview)
-2. [Project Goals](#Project-Goals)
-3. [Data](#data)
-4. [Data Cleaning](#Data-Cleaning)
-5. [Model](#Model)
-6. [Initial Model Performance](#Initial-Model-Performance)
-7. [Model Optimization](#Model_Optimization)
-8. [Results](#Results)
-9. [Future Development](#Future-Development)
-10. [Repository Structure](#Repository-Structure)
-11. [How to Run](#How-to-Run)
-12. [Conclusion](#conclusion)
+2.  [Variables Table](#Variables-Table)
+3. [Project Goals](#Project-Goals)
+4. [Data](#data)
+5. [Data Cleaning](#Data-Cleaning)
+6. [Model](#Model)
+7. [Initial Model Performance](#Initial-Model-Performance)
+8. [Model Optimization](#Model_Optimization)
+9. [Results](#Results)
+10. [Future Development](#Future-Development)
+11. [Repository Structure](#Repository-Structure)
+12. [How to Run](#How-to-Run)
+13. [Conclusion](#conclusion)
 
 
 
@@ -35,6 +36,30 @@ The dataset used for this project contains synthetic data related to obesity lev
 - **Age, Height, Weight**: Numerical values representing physical attributes.
 - **FAVC, CAEC, SMOKE, MTRANS, etc.**: Categorical variables representing lifestyle choices and habits.
 - **NObeyesdad**: The target variable representing the obesity classification.
+
+
+## **Variables Table**
+
+| Variable Name                    | Role    | Type        | Demographic | Description                                                      | Units | Missing Values |
+|-----------------------------------|---------|-------------|-------------|------------------------------------------------------------------|-------|----------------|
+| **Gender**                        | Feature | Categorical | Gender      |                                                                  |       | No             |
+| **Age**                           | Feature | Continuous  | Age         |                                                                  |       | No             |
+| **Height**                        | Feature | Continuous  |             |                                                                  |       | No             |
+| **Weight**                        | Feature | Continuous  |             |                                                                  |       | No             |
+| **family_history_with_overweight**| Feature | Binary      |             | Has a family member suffered or suffers from overweight?          |       | No             |
+| **FAVC**                          | Feature | Binary      |             | Do you eat high caloric food frequently?                          |       | No             |
+| **FCVC**                          | Feature | Integer     |             | Do you usually eat vegetables in your meals?                      |       | No             |
+| **NCP**                           | Feature | Continuous  |             | How many main meals do you have daily?                            |       | No             |
+| **CAEC**                          | Feature | Categorical |             | Do you eat any food between meals?                                |       | No             |
+| **SMOKE**                         | Feature | Binary      |             | Do you smoke?                                                     |       | No             |
+| **CH2O**                          | Feature | Continuous  |             | How much water do you drink daily?                                |       | No             |
+| **SCC**                           | Feature | Binary      |             | Do you monitor the calories you eat daily?                        |       | No             |
+| **FAF**                           | Feature | Continuous  |             | How often do you have physical activity?                          |       | No             |
+| **TUE**                           | Feature | Integer     |             | How much time do you use technological devices such as cell phone, videogames, television, computer and others? | No    |
+| **CALC**                          | Feature | Categorical |             | How often do you drink alcohol?                                   |       | No             |
+| **MTRANS**                        | Feature | Categorical |             | Which transportation do you usually use?                          |       | No             |
+| **NObeyesdad**                    | Target  | Categorical |             | Obesity level                                                     |       | No             |
+
 
 ## **Data Cleaning**
 - Categorical variables were encoded as numerical values.
