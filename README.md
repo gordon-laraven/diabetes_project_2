@@ -143,7 +143,7 @@ Special thanks to all participants and contributors who made this project possib
 
 Dataset: https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition
 
-Kaggle information: https://www.kaggle.com/datasets/suleymansulak/obesity-datasetWhat
+Kaggle information: https://www.kaggle.com/datasets/suleymansulak/obesity-dataset
 
 BMI: https://www.ncbi.nlm.nih.gov/books/NBK541070/
 
