@@ -17,6 +17,7 @@
 14. [How to Run](#how-to-run)
 15. [Conclusion](#conclusion)
 16. [Acknowledgments](#acknowledgments)
+17. [Sources](#Sources)
 
 
 ## Overview
@@ -136,5 +137,12 @@ This project demonstrates the use of a machine learning model to classify obesit
 
 ## Acknowledgments
 Special thanks to all participants and contributors who made this project possible.
+
+
+## Sources
+
+Dataset: https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition
+
+Kaggle information: https://www.kaggle.com/datasets/suleymansulak/obesity-datasetWhat is BMI: https://www.ncbi.nlm.nih.gov/books/NBK541070/
 
 
