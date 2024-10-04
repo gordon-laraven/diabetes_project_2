@@ -1,32 +1,47 @@
 # Obesity Classification: A Machine Learning Approach
 
 ## Table of Contents
-1. [Overview](#Overview)
-2. [Project Goals](#Project-Goals)
-3. [Variables Table](#Variables-Table)
-4. [Data](#Data)
-5. [Data Cleaning](#Data-Cleaning)
-6. [Methodology](#Methodology)
-7. [Models Implemented](#Models-Implemented)
-8. [Initial Model Performance](#Initial-Model-Performance)
-9. [Model Optimization](#Model-Optimization)
-10. [Results](#Results)
-11. [Insights and Key Findings](#Insights-and-Key-Findings)
-12. [Future Development](#Future-Development)
-13. [Repository Structure](#Repository-Structure)
-14. [How to Run](#How-to-Run)
-15. [Conclusion](#Conclusion)
-16. [Acknowledgments](#Acknowledgments)
+1. [Overview](#overview)
+2. [Project Goals](#project-goals)
+3. [Data Description](#data-description)
+4. [Variables Table](#variables-table)
+5. [Data Cleaning](#data-cleaning)
+6. [Methodology](#methodology)
+7. [Models Implemented](#models-implemented)
+8. [Initial Model Performance](#initial-model-performance)
+9. [Model Optimization](#model-optimization)
+10. [Results](#results)
+11. [Insights and Key Findings](#insights-and-key-findings)
+12. [Future Work](#future-work)
+13. [Repository Structure](#repository-structure)
+14. [How to Run](#how-to-run)
+15. [Conclusion](#conclusion)
+16. [Acknowledgments](#acknowledgments)
 
 
 ## Overview
-This project aims to classify individuals into different obesity levels based on several health-related factors such as age, height, weight, eating habits, and physical activities. The classification model predicts the obesity category based on these attributes with a high level of accuracy, providing insights for health awareness and intervention planning.
+This project aims to classify individuals into different obesity levels based on several health-related factors such as age, height, weight, eating habits, and physical activities. The classification model predicts the obesity category based on these attributes with a high level of accuracy, providing insights for health awareness and intervention planning. Understanding the factors contributing to obesity can help in formulating effective interventions. This project utilizes a synthetic dataset to build and evaluate machine learning models for predicting obesity levels based on various lifestyle and demographic features.
 
 ## Project Goals
 - **Data Cleaning and Preparation**: The dataset was cleaned and transformed to ensure it is ready for model training.
 - **Model Training**: A Random Forest classifier was used to predict obesity levels.
 - **Model Optimization**: The model's performance was further optimized using hyperparameter tuning.
 - **Evaluation**: The final model achieved a classification accuracy of over 95%.
+
+## Data Description
+- **Total Observations:** 2,112 rows
+- **Features:** 
+  - Gender
+  - Age
+  - Height
+  - Weight
+  - Family History
+  - Eating habits
+  - Physical activity
+  - ...and more.
+- **Target Variable:** Obesity level (classified into various categories).
+
+The dataset was synthetically generated to represent diverse obesity levels, ensuring a balanced distribution across different features.
 
 ## Variables Table
 
@@ -50,21 +65,32 @@ This project aims to classify individuals into different obesity levels based on
 | **MTRANS**                        | Feature | Categorical |             | Which transportation do you usually use?                          |       | No             |
 | **NObeyesdad**                    | Target  | Categorical |             | Obesity level                                                     |       | No             |
 
-## Data
-The dataset used for this project contains synthetic data related to obesity levels with various health-related features. The target variable represents the obesity classification.
-
 ## Data Cleaning
 - Categorical variables were encoded as numerical values.
 - Numerical values were scaled using `StandardScaler`.
 - The cleaned dataset was saved as a CSV for further use.
 
 ## Methodology
-1. **Exploratory Data Analysis (EDA)**: Conducted histograms and bar plots to visualize key features and analyze the correlation between features and the target variable.
-2. **Model Selection**: Implemented a **Random Forest Classifier** due to its robustness and ability to handle categorical and numerical data.
-3. **Data Splitting**: The dataset was divided into 80% for training and 20% for testing.
+1. **Data Cleaning and Preprocessing**
+   - Handled missing values.
+   - Categorical encoding for variables like Gender, Family History, and Eating habits.
+   - Scaled continuous variables (e.g., Age, Weight, Height).
+   - Addressed class imbalance during model evaluation.
+2. **Exploratory Data Analysis (EDA)**: Conducted histograms and bar plots to visualize key features and analyze the correlation between features and the target variable.
+3. **Model Selection**: Implemented a **Random Forest Classifier** due to its robustness and ability to handle categorical and numerical data.
+4. **Data Splitting**: The dataset was divided into 80% for training and 20% for testing.
 
 ## Models Implemented
 - **Random Forest Classifier**: An ensemble method used to predict obesity levels based on various health factors.
+- **Logistic Regression:** A linear model used for baseline comparison.
+- **K-Nearest Neighbors (KNN):** A distance-based algorithm for comparison.
+
+### Model Performance
+| Model               | Accuracy  | Precision | Recall | F1-Score |
+|---------------------|-----------|-----------|--------|----------|
+| Logistic Regression  | 76.12%    | Varies    | Varies | Varies   |
+| Random Forest        | 96.21%    | Varies    | Varies | Varies   |
+| K-Nearest Neighbors   | 81.32%    | Varies    | Varies | Varies   |
 
 ## Initial Model Performance
 - **Accuracy**: 95.5%
@@ -78,12 +104,17 @@ A hyperparameter tuning process was conducted using `GridSearchCV`, which includ
 ## Results
 - **Final Model Accuracy**: 95.5%
 - The model successfully classifies individuals into obesity categories with a high degree of accuracy.
+- **Random Forest** achieved the highest accuracy of **96.21%**, effectively handling diverse obesity levels.
+- **Logistic Regression** and **KNN** performed moderately, with Logistic Regression struggling with more complex classes.
 
 ## Insights and Key Findings
-- **Critical Features**: Family history, physical activity, and eating habits were significant predictors of obesity.
-- **Model Performance**: Random Forest outperformed other models, making it the most suitable for this dataset due to its ability to handle non-linear data.
+- **Critical Features:** Family history, physical activity, and eating habits were significant predictors of obesity.
+- **Model Performance:** Random Forest outperformed other models, making it the most suitable for this dataset due to its ability to handle non-linear data.
 
-## Future Development
+## Future Work
+- Investigate how model accuracy varies with real-world data.
+- Explore advanced feature engineering methods (e.g., calculating BMI).
+- Conduct further investigation into the impact of class imbalance and potential oversampling techniques.
 - Explore more complex models like XGBoost or Neural Networks for potential further improvements.
 - Use real-world data for validation.
 - Investigate the impact of other features, such as dietary patterns and medical history, on the prediction of obesity levels.
