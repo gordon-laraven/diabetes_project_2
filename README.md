@@ -17,7 +17,7 @@
 14. [How to Run](#How-to-Run)
 15. [Conclusion](#Conclusion)
 16. [Acknowledgments](#Acknowledgments)
-17. [License](#License)
+
 
 ## Overview
 This project aims to classify individuals into different obesity levels based on several health-related factors such as age, height, weight, eating habits, and physical activities. The classification model predicts the obesity category based on these attributes with a high level of accuracy, providing insights for health awareness and intervention planning.
@@ -106,5 +106,4 @@ This project demonstrates the use of a machine learning model to classify obesit
 ## Acknowledgments
 Special thanks to all participants and contributors who made this project possible.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
